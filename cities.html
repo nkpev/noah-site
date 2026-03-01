@@ -28,8 +28,7 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: auto;
+            flex: 1;
             padding: 30px 20px;
         }
 
@@ -76,6 +75,22 @@
             border-radius: 10px;
             margin: 10px 0;
         }
+
+        .layout {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            margin: 20px 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
     </style>
 </head>
 
@@ -87,127 +102,141 @@
         <a href="rants.html">Rants</a>
     </nav>
 
-    <div class="container">
-        <h1>Cities I've Been To</h1>
+    <div class="layout">
+        <aside class="sidebar left">
+            <h3>Fun Facts</h3>
+            <p>🌎 I've visited 5 cities so far.</p>
+            <p>📸 I take all my own photos.</p>
+        </aside>
 
-        <div class="city">
+        <div class="container">
+            <h1>Cities I've Been To</h1>
 
-            <figure>
-                <h2>San Jose</h2>
+            <div class="city">
 
-                <img src="images/san-jose-graduation.jpeg" alt="Middle school graduation! June 2025">
-                <figcaption>
-                    <strong>Middle school graduation! June 2025</strong><br>
-                    Best city ever. I mean, what else did you expect?
-                </figcaption>
-            </figure>
+                <figure>
+                    <h2>San Jose</h2>
+
+                    <img src="images/san-jose-graduation.jpeg" alt="Middle school graduation! June 2025">
+                    <figcaption>
+                        <strong>Middle school graduation! June 2025</strong><br>
+                        Best city ever. I mean, what else did you expect?
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="city">
+                <figure>
+                    <h2>Los Angeles</h2>
+
+                    <img src="images/picture-with-kobe.jpeg" alt="Picture with Kobe statue">
+                    <figcaption>
+                        <strong>Picture with the statue of Kobe Bryant, June 2024</strong><br>
+                        Insanely mixed bag. Best food in the state. Some parts of the city were terrible though, like MacArthur Park.<br>
+                        Hollywood Walk of Fame, Crypto.com Arena, and Koreatown were really cool. 
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="city">
+                <h2>San Diego</h2>
+                <p>Amazing, beautiful city with the best weather on Earth. Great zoo.</p>
+            </div>
+
+            <div class="city">
+
+                <figure>
+                    <h2>San Francisco</h2>
+
+                    <img src="images/ghirardelli-square.png" alt="Ghirardelli Square, 2025">
+                    <figcaption> 
+                        <strong>Ghirardelli Square, 2025</strong><br>
+                        Pretty city. Just too woke for me. Also super cold, of course.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="city">
+
+                <figure>
+                    <h2>Fresno</h2>
+
+                    <img src="images/me-in-fresno.jpeg" alt="Shopping in Fresno, Summer 2024">
+                    <figcaption>
+                        <strong>Shopping in Fresno, Summer 2024</strong><br>
+                        Way too hot.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="city">
+                <h2>Sacramento</h2>
+            </div>
+
+            <div class="city">
+
+                <figure>
+                    <h2>Oakland</h2>
+
+                    <img src="images/jack-london.jpeg" alt="Jack London Square, Thanksgiving 2025">
+                    <figcaption>
+                        <strong>Jack London Square, Thanksgiving 2025</strong><br>
+                        Rough city. Improved a lot since 2022 for sure, but stil far from good.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="city">
+                <h2>Palo Alto</h2>
+                <p>Rich asf city</p>
+            </div>
+
+            <div class="city">
+                <h2>Anaheim</h2>
+                <p>Disneyland!</p>
+            </div>
+
+            <div class="city">
+                <figure>
+                    <h2>Santa Clara</h2>
+                    <img src="images/levi-stadium.jpeg" alt="Levi's Stadium, September 13, 2024. LAFC 4-2 Earthquakes. I saw Son Heung-min!">
+                    <figcaption>
+                        <strong>Levi's Stadium, September 13, 2024. LAFC 4-2 Earthquakes</strong><br>
+                        Yes, I did see Son Heung-min that day!<br>
+                        Santa Clara also has Great America, though that's shutting down soon. Overall, it is a really good city.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="city">
+                <h2>Stockton</h2>
+                <p>Literally nothing to do. That explains why I didn't take any photos.</p>
+            </div>
+
+            <div class="city">
+                <h2>Irvine</h2>
+            </div>
+
+            <div class="city">
+                <h2>Fremont</h2>
+            </div>
+
+            <div class="city">
+                <h2>Cupertino</h2>
+            </div>
+
+            <div class="city">
+                <h2>Honolulu</h2>
+                <p>Good but overrated for sure</p>
+            </div>
+
+        <aside class="sidebar right">
+            <h3>Fun Facts</h3>
+            <p>🌎 I've visited 5 cities so far.</p>
+            <p>📸 I take all my own photos.</p>
+        </aside>
+        
         </div>
-
-        <div class="city">
-            <figure>
-                <h2>Los Angeles</h2>
-
-                <img src="images/picture-with-kobe.jpeg" alt="Picture with Kobe statue">
-                <figcaption>
-                    <strong>Picture with the statue of Kobe Bryant, June 2024</strong><br>
-                    Insanely mixed bag. Best food in the state. Some parts of the city were terrible though, like MacArthur Park.<br>
-                    Hollywood Walk of Fame, Crypto.com Arena, and Koreatown were really cool. 
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="city">
-            <h2>San Diego</h2>
-            <p>Amazing, beautiful city with the best weather on Earth. Great zoo.</p>
-        </div>
-
-        <div class="city">
-
-            <figure>
-                <h2>San Francisco</h2>
-
-                <img src="images/ghirardelli-square.png" alt="Ghirardelli Square, 2025">
-                <figcaption> 
-                    <strong>Ghirardelli Square, 2025</strong><br>
-                    Pretty city. Just too woke for me. Also super cold, of course.
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="city">
-
-            <figure>
-                <h2>Fresno</h2>
-
-                <img src="images/me-in-fresno.jpeg" alt="Shopping in Fresno, Summer 2024">
-                <figcaption>
-                    <strong>Shopping in Fresno, Summer 2024</strong><br>
-                    Way too hot.
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="city">
-            <h2>Sacramento</h2>
-        </div>
-
-        <div class="city">
-
-            <figure>
-                <h2>Oakland</h2>
-
-                <img src="images/jack-london.jpeg" alt="Jack London Square, Thanksgiving 2025">
-                <figcaption>
-                    <strong>Jack London Square, Thanksgiving 2025</strong><br>
-                    Rough city. Improved a lot since 2022 for sure, but stil far from good.
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="city">
-            <h2>Palo Alto</h2>
-            <p>Rich asf city</p>
-        </div>
-
-        <div class="city">
-            <h2>Anaheim</h2>
-            <p>Disneyland!</p>
-        </div>
-
-        <div class="city">
-            <figure>
-                <h2>Santa Clara</h2>
-                <img src="images/levi-stadium.jpeg" alt="Levi's Stadium, September 13, 2024. LAFC 4-2 Earthquakes. I saw Son Heung-min!">
-                <figcaption>
-                    <strong>Levi's Stadium, September 13, 2024. LAFC 4-2 Earthquakes</strong><br>
-                    Yes, I did see Son Heung-min that day!<br>
-                    Santa Clara also has Great America, though that's shutting down soon. Overall, it is a really good city.
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="city">
-            <h2>Stockton</h2>
-            <p>Literally nothing to do. That explains why I didn't take any photos.</p>
-        </div>
-
-        <div class="city">
-            <h2>Irvine</h2>
-        </div>
-
-        <div class="city">
-            <h2>Fremont</h2>
-        </div>
-
-        <div class="city">
-            <h2>Cupertino</h2>
-        </div>
-
-        <div class="city">
-            <h2>Honolulu</h2>
-            <p>Good but overrated for sure</p>
-        </div>
-    </div>
 
 </body>
 </html>
