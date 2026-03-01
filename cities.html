@@ -2,23 +2,80 @@
 <html>
 <head>
     <title>Cities - Noah Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dbeafe;
+            color: #111;
+            margin: 0;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
+
 <body>
-    <nav style="background:white; padding:15px;">
-        <a href="index.html">Home</a> |
-        <a href="cities.html">Cities</a> |
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cities.html">Cities</a>
         <a href="rants.html">Rants</a>
     </nav>
-    
-    <h1>Cities I've Been To</h1>
 
-    <ul>
-        <li>San Jose</li>
-        <li>Los Angeles</li>
-        <li>New York</li>
-        <li>Chicago</li>
-    </ul>
+    <div class="container">
+        <div class="card">
+            <h1>Cities I've Been To</h1>
 
-    <a href="index.html">Back Home</a>
+            <ul>
+                <li>San Jose</li>
+                <li>Los Angeles</li>
+                <li>New York</li>
+                <li>Chicago</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
