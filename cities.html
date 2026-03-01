@@ -28,30 +28,37 @@
         }
 
         .container {
-            max-width: 700px;
+            max-width: 1000px;
             margin: auto;
-            padding: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 30px 20px;
         }
 
         h1 {
-            margin-top: 0;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
-        ul {
-            padding-left: 20px;
+        /* GRID LAYOUT */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .city-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
             font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        li {
-            margin-bottom: 8px;
+        .city-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
         }
     </style>
 </head>
@@ -65,15 +72,23 @@
     </nav>
 
     <div class="container">
-        <div class="card">
-            <h1>Cities I've Been To</h1>
+        <h1>Cities I've Been To 🌆</h1>
 
-            <ul>
-                <li>San Jose</li>
-                <li>Los Angeles</li>
-                <li>New York</li>
-                <li>Chicago</li>
-            </ul>
+        <div class="grid">
+            <div class="city-card">Los Angeles</div>
+            <div class="city-card">San Diego</div>
+            <div class="city-card">San Jose</div>
+            <div class="city-card">San Francisco</div>
+            <div class="city-card">Fresno</div>
+            <div class="city-card">Sacramento</div>
+            <div class="city-card">Long Beach</div>
+            <div class="city-card">Oakland</div>
+            <div class="city-card">Bakersfield</div>
+            <div class="city-card">Anaheim</div>
+            <div class="city-card">Santa Ana</div>
+            <div class="city-card">Riverside</div>
+            <div class="city-card">Stockton</div>
+            <div class="city-card">Irvine</div>
         </div>
     </div>
 
