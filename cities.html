@@ -30,6 +30,8 @@
         .container {
             flex: 1;
             padding: 30px 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         h1 {
@@ -78,18 +80,35 @@
 
         .layout {
             display: flex;
-            max-width: 1200px;
-            margin: auto;
+            width: 100%;
         }
 
         .sidebar {
             width: 200px;
             padding: 20px;
             background: white;
-            border-radius: 12px;
-            margin: 20px 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            box-sizing: border-box;
         }
+
+        .sidebar.left {
+            border-radius: 0 12px 12px 0;
+        }
+
+        .sidebar.right {
+            border-radius: 12px 0 0 12px;
+        }
+
+    @media (max-width: 900px) {
+        .layout {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: auto;
+            margin: 10px 20px;
+        }
+    }
 
     </style>
 </head>
@@ -104,6 +123,12 @@
 
     <div class="layout">
         <aside class="sidebar left">
+            <h3>Fun Facts</h3>
+            <p>🌎 I've visited 5 cities so far.</p>
+            <p>📸 I take all my own photos.</p>
+        </aside>
+
+        <aside class="sidebar right">
             <h3>Fun Facts</h3>
             <p>🌎 I've visited 5 cities so far.</p>
             <p>📸 I take all my own photos.</p>
@@ -230,12 +255,6 @@
                 <p>Good but overrated for sure</p>
             </div>
 
-        <aside class="sidebar right">
-            <h3>Fun Facts</h3>
-            <p>🌎 I've visited 5 cities so far.</p>
-            <p>📸 I take all my own photos.</p>
-        </aside>
-        
         </div>
 
 </body>
